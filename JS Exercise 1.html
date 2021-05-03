@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercise 1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="New item..." id="addItem">
+        <input type="button" onclick="newItem()" value="Add" id="newItem">
+        <br>
+        <select name="categories" id="categories" class="categories">
+            <option value="Food">Food</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Misc">Misc</option>
+        </select>
+    </div>
+    <div class="categoriesList">
+        <div class="foodList">
+            <p>Food</p>
+            <ul id="food"></ul>
+        </div>
+        <div class="shoppingList">
+            <p>Shopping</p>
+            <ul id="shopping"></ul>
+        </div>
+        <div class="miscList"> 
+            <p>Misc</p>
+            <ul id="misc"></ul>
+        </div>
+    </div>
+   
+</body>
+<script src="app.js"></script>
+</html>
